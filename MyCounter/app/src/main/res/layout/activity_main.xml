@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/girlyskullz"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#b4004e"
+                android:fontFamily="sans-serif-medium"
+                android:text="Home Team" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/team_a_score"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="104dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="0" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:onClick="touchDown"
+                android:radius="5dp"
+                android:text="+6 TOUCH DOWN" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:onClick="extraPoint"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="+1 EXTRA POINT" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:onClick="fieldGoal"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="+3 FIELD GOAL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:textColor="#b4004e"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Visiting Team" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/team_b_score"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="104dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="0" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:onClick="touchDownB"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="+6 TOUCH DOWN" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:onClick="extraPointB"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="+1 EXTRA POINT" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:onClick="fieldGoalB"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="+3 FIELD GOAL" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/butt"
+        android:onClick="reset"
+        android:text="RESET" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/butt"
+        android:background="#000" />
+</RelativeLayout>
